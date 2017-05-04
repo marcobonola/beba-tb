@@ -1,0 +1,25 @@
+<div layout="vertical" layout-fill>
+
+  <md-content style="width:100%">
+    <section class="jumbotron">
+      <h1>Historical data for processed flows</h1>
+
+    </section>
+
+    <div  class="techs" layout-align="center">
+      <div class="md-padding selectdemoSelectedText" ng-cloak="">
+        <div>
+          <h1 class="md-title">Select the flow to plot</h1>
+          <div layout="row">
+            <md-input-container>
+              <md-select ng-change="history.onSelectedFlowChange()" ng-model="history.selectedItem" md-selected-text="history.getSelectedText()">
+                  <md-option ng-value="item" ng-repeat="item in history.ips">{{item}}</md-option>
+              </md-select>
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+      <nvd3 options="history.options" data="history.data"></nvd3>
+    </div>
+  </md-content>
+</div>
