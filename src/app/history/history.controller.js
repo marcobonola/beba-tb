@@ -15,7 +15,7 @@
 
     $http({
       method: 'GET',
-      url: 'http://capoccina.netgroup.uniroma2.it:5000/history'
+      url: 'http://beba-demo-be.netgroup.uniroma2.it/history'
     }).then(function successCallback(response) {
       // this callback will be called asynchronously
       // when the response is availabl
@@ -82,7 +82,7 @@
 
         $http({
           method: 'GET',
-          url: 'http://capoccina.netgroup.uniroma2.it:5000/flowhistory?ip='+vm.selectedItem+'&ts='+lastTS
+          url: 'http://beba-demo-be.netgroup.uniroma2.it/flowhistory?ip='+vm.selectedItem+'&ts='+lastTS
       }).then(function successCallback(response) {
           if (response.data["samples"].length === 0) {return};
 

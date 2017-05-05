@@ -49,7 +49,7 @@
 
       $http({
         method: 'GET',
-        url: 'http://capoccina.netgroup.uniroma2.it:5000/realtime'
+        url: 'http://beba-demo-be.netgroup.uniroma2.it/realtime'
       }).then(function successCallback(response) {
         if (response.data["samples"].length === 0) {return};
 
