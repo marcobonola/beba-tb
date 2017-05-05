@@ -49,7 +49,8 @@
           },
           duration: 500,
           xAxis: {
-            axisLabel: 'flows'
+            axisLabel: 'flows',
+            rotateLabels: -30
           },
           yAxis: {
             axisLabel: 'pps',
